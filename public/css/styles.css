@@ -2,6 +2,8 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 
@@ -25,7 +27,7 @@ header {
 }
 
 .lista {
-  text-decoration: none;
+  /*text-decoration: none;*/
   margin-right: 10px;
   /*list-style-type:none;*/
 }
@@ -35,7 +37,7 @@ header {
 }
 .nav-link {
   /*text-decoration: none;*/
-  list-style-type: none;
+  /*list-style-type: none;*/
   text-align: left;
   padding-left: 0;
 }
@@ -45,6 +47,7 @@ header {
 .compraCuotas {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .burger-menu {
