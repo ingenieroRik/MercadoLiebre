@@ -18,38 +18,58 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.logo {
+  width: 50%;
+}
+.boton {
+  width: 30%;
+  height: 20%;
+  text-align:center;
+}
+.botonb {
+  background-color: var(--grisClaro) ;
 
+  width: 50%;
+  /*width: 150px;*/
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  padding-top: 8px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+.ofertas {
+  font-size: 8px;
+  margin-left: 3px;
+  color: var(--grisOscuro);
+  padding-top: 2px;
+}
+
+.lupa {
+  color: var(--celeste);
+  
+  padding-right: 7px;
+  margin-left: auto;
+}
 header {
   background-color: var(--amarillo);
 }
-#titulo {
-  text-align: center;
+.navbar {
+  display:none;
 }
 
-.lista {
-  /*text-decoration: none;*/
-  margin-right: 10px;
-  /*list-style-type:none;*/
-}
-
-.nav {
-  list-style: none;
-}
-.nav-link {
-  /*text-decoration: none;*/
-  /*list-style-type: none;*/
-  text-align: left;
-  padding-left: 0;
-}
 .buscar-lupa {
-  align-self: center;
+ /* height: 40px;*/
+ padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 .compraCuotas {
   text-align: center;
+  font-size: 14px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 .burger-menu {
   text-align: center;
   margin-bottom: 20px;
@@ -58,10 +78,16 @@ header {
   color: var(--grisClaro);
   background-color: var(--celeste);
   border-radius: 10%;
-  /*font-size: large;*/
-  padding: 10px;
-  
+  padding: 10px; 
 }
+main {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box; 
+ padding-bottom:30px;
+  background-color: var(--grisClaro);
+}
+
 h2 {
   font-size: 24px;
 }
@@ -74,8 +100,203 @@ h4 {
 p {
   font-size: 12px;
 }
-/*--------------------------footer--------------------*/
-.icono-footer{
-    color: var(--celeste);
-    font-size:xx-large;
+
+.img1 {
+  max-width: 90%;
+  margin-bottom: 20px;
 }
+.banner {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.seccion1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.seccion2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.container1{
+  width: 100%;
+  border: solid 2px var(--grisClaro) ;
+  margin: 0;
+  
+}
+.container2{
+  border-top: solid 1px var(--grisClaro) ;
+  text-align:center; 
+  background-color: white;
+}
+.container3{
+  border-top: solid 1px var(--grisClaro) ;
+  background-color: white;
+}
+.cont-circulo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+.camioncito{
+  color: var(--verde); 
+  margin-top: 5px;
+}
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--verde);
+  text-align: center;
+}
+.precio-dto {
+  display: flex;
+  padding-left: 10px;
+}
+.precio{
+  width: 30vw;
+}
+.descuento {
+  color: var(--verde);
+  width: 70vw;
+  font-size:14px ;
+}
+.descripcion {
+  display: none;
+}
+.basado {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*--------------------------footer--------------------*/
+footer{
+  box-sizing: border-box;
+}
+.pie-pagina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.sector-footer{
+  text-align: center;
+  width:100%;
+  padding: 10px;
+}
+
+.icono-footer{
+  color:var(--azul);
+  font-size:x-large;
+  margin: 10px;
+}
+.titulo-footer {
+  font-size: 16px;
+}
+.texto-footer {
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* para agrandar y achicar figura  20% */
+.icono-footer:hover {
+-webkit-transform: scale(1.2);
+color: var(--celeste);
+}
+/*
+.container1:hover {
+  -webkit-transform: scale(1.1);
+}
+*/
+.container1:hover .descripcion {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+  }
+.cont-circulo:hover .camioncito {
+    transform: rotateZ(360deg);
+    right: 40px;
+}
+
+
+/*  tablets    */
+@media (min-width:361px){
+  .container1{box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .burger-menu{
+    display: none;
+  }
+  .ofertas {
+    font-size: 14px;
+  padding-top: 3PX;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  .navbar li{
+    margin: 0 8px;
+  }
+  .navbar a{
+    color: #111;
+    font-size: 14px;
+  }
+  .container1 {
+    
+    width: 45%;
+   
+  }
+  .pie-pagina {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+/*   notebook   */
+@media (min-width:769px){
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .burger-menu{
+    display: none;
+  }
+  .ofertas {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .container1{
+    width: 21%;
+  }
+  
+}
+@media (min-width: 1200px){
+  .navbar, .buscar-lupa {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+
