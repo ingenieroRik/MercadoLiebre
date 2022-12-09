@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="es">
 
+<head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,20 +11,23 @@
 
 <script src="https://kit.fontawesome.com/c0e6f14933.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-
+<link rel="stylesheet" href="css/header-footer.css" />
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/register.css" />
 <title>Register</title>
-<html lang="en">
-<head>
-    <section class="buscar-lupa">
-        <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
+</head>
 
-        <div class="botonb">
-            <p class="ofertas">Buscar producto, ofertas y mas</p>
-            <div class="lupa"><i class="fas fa-search"></i></div>
-        </div>
-    </section>
+<body>
+    <header>
+        <section class="buscar-lupa">
+            <a href="/">
+                 <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
+            </a>
+            <div class="botonb">
+                <p class="ofertas">Buscar producto, ofertas y mas</p>
+                <div class="lupa"><i class="fas fa-search"></i></div>
+            </div>
+        </section>
 
     <section class="compraCuotas">
         <i class="fas fa-hand-holding-usd"></i>
@@ -39,7 +44,7 @@
         </ul>
         <ul class="navbar-der">
             <li><a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
-            <li><a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
         </ul>
     </nav>
@@ -51,11 +56,8 @@
     <div>
         <img src="/images/img-home-banner.jpg" class="banner" alt="banner" />
     </div>
-</header>
+    </header>
     
-
-
-</head>
 <body>
     <section class="registro">
         <form action="/registro" method="POST" class="formulario">
@@ -63,14 +65,20 @@
                 
                 <input type="text" name="nombre" id="nombre" placeholder="nombre y apellido" required minlength="12">
             </div>
-            <label for="nombreUsuario">Nombre de usuario</label>
-            <input type="text" name="nombreUsuario" id="nombreUsuario">
+            <div class="nombre-usuario">
+                <input outline="none"  type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuario" required minlength="12">
+            </div>
+             
+            <label >Fecha de nacimiento</label>
+            <input  class="nombre" type="date" name="fechaNacimiento" id="fechaNacimiento" required>
 
-             <label for="fechaNacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            <label>Perfil de usuario</label>
+            <select name="comprar-vender" id="comprar-vender" class="comprar-vender" required>
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
 
-            <label for="perfil">Comprar o vender:</label>
-            <input type="text" name="perfil" id="perfil">
+            
 
             <label>Seleccione una categoria</label>
             
@@ -101,20 +109,24 @@
                 <input type="file" name="foto" id="foto" required>
             </div>
 
-            <label for="contraseña">Contraseña :</label>
-            <input type="password" name="password" id="password">
+            <div class="nombre">
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>
+            <div class="nombre">
+            <input type="password" name="confirmarpassword" id="confirmarpassword" placeholder="Confirmar contraseña">
+            </div>
 
-            <label for="confirmarpassword">Confirmar contraseña:</label>
-            <input type="password" name="confirmarpassword" id="confirmarpassword">
-       
-
-            <button type="reset">Cancelar</button>
-            <button type="submit">Enviar</button>
-
+            <div class="reg-reset">
+            <button class="reset" type="reset">Cancelar</button>
+            <button class="register" type="submit">Enviar</button>
+            </div>
 
         </form>
+
     </section>
-    <footer class="pie-pagina">
+
+    <footer>
+    <section class="pie-pagina">
         <section class="sector-footer">
             <i class="fas fa-credit-card icono-footer"></i>
             <h2 class="titulo-footer">Pagá con tarjeta o efectivo</h2>
@@ -142,11 +154,10 @@
                 hacer, porque estás siempre protegid@.
             </p>
         </section>
-        <br />
-        <section>
-            <p class="texto-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            <p></p>
-        </section>
+        <
+    </section>
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      
     </footer>
 </body>
 

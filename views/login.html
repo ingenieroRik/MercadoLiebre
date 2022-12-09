@@ -13,6 +13,7 @@
 
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header-footer.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/login.css" />
     <title>MercadoLiebre</title>
@@ -21,8 +22,9 @@
 <body>
     <header>
         <section class="buscar-lupa">
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
-
+            <a href="/">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
+            </a>
             <div class="botonb">
                 <p class="ofertas">Buscar producto, ofertas y mas</p>
                 <div class="lupa"><i class="fas fa-search"></i></div>
@@ -44,7 +46,7 @@
             </ul>
             <ul class="navbar-der">
                 <li><a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li><a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -78,7 +80,8 @@
 
 
     </body>
-    <footer class="pie-pagina">
+    <footer>
+    <section class="pie-pagina">
         <section class="sector-footer">
             <i class="fas fa-credit-card icono-footer"></i>
             <h2 class="titulo-footer">Pagá con tarjeta o efectivo</h2>
@@ -106,11 +109,10 @@
                 hacer, porque estás siempre protegid@.
             </p>
         </section>
-        <br />
-        <section>
-            <p class="texto-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            <p></p>
-        </section>
+       
+    </section>
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+       
     </footer>
 </body>
 

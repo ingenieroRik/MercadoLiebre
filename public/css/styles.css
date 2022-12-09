@@ -18,68 +18,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.logo {
-  width: 50%;
-}
-.boton {
-  width: 30%;
-  height: 20%;
-  text-align:center;
-}
-.botonb {
-  background-color: var(--grisClaro) ;
 
-  width: 50%;
-  /*width: 150px;*/
-  border-radius: 5px;
-  height: 30px;
-  display: flex;
-  padding-top: 8px;
-  margin-top: 5px;
-  margin-left: 30px;
-}
-.ofertas {
-  font-size: 8px;
-  margin-left: 3px;
-  color: var(--grisOscuro);
-  padding-top: 2px;
-}
-
-.lupa {
-  color: var(--celeste);
-  
-  padding-right: 7px;
-  margin-left: auto;
-}
-header {
-  background-color: var(--amarillo);
-}
-.navbar {
-  display:none;
-}
-
-.buscar-lupa {
- /* height: 40px;*/
- padding: 15px;
-  display: flex;
-  justify-content: center;
-}
-.compraCuotas {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.burger-menu {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.burger {
-  color: var(--grisClaro);
-  background-color: var(--celeste);
-  border-radius: 10%;
-  padding: 10px; 
-}
 main {
   width: 100%;
   margin: auto;
@@ -105,10 +44,6 @@ p {
   max-width: 90%;
   margin-bottom: 20px;
 }
-.banner {
-  width: 100%;
-  margin-bottom: -5px;
-}
 .seccion1 {
   display: flex;
   flex-direction: row;
@@ -133,9 +68,7 @@ p {
 }
 .container1{
   width: 100%;
-  border: solid 2px var(--grisClaro) ;
   margin: 0;
-  
 }
 .container2{
   border-top: solid 1px var(--grisClaro) ;
@@ -145,22 +78,32 @@ p {
 .container3{
   border-top: solid 1px var(--grisClaro) ;
   background-color: white;
+
 }
 .cont-circulo {
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   padding-bottom: 8px;
+  margin-right: 20px;
 }
 .camioncito{
   color: var(--verde); 
   margin-top: 5px;
 }
+.container3:hover .circulo{
+  transform: rotateZ(-90deg);
+  
+}
+
 .circulo {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: solid 1px var(--verde);
   text-align: center;
+
+  transition: .5s;
+ 
 }
 .precio-dto {
   display: flex;
@@ -182,107 +125,28 @@ p {
   text-align: center;
 }
 
-/*--------------------------footer--------------------*/
-footer{
-  box-sizing: border-box;
-}
-.pie-pagina {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-}
-.sector-footer{
-  text-align: center;
-  width:100%;
-  padding: 10px;
-}
-
-.icono-footer{
-  color:var(--azul);
-  font-size:x-large;
-  margin: 10px;
-}
-.titulo-footer {
-  font-size: 16px;
-}
-.texto-footer {
-  font-size: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* para agrandar y achicar figura  20% */
-.icono-footer:hover {
--webkit-transform: scale(1.2);
-color: var(--celeste);
-}
-/*
-.container1:hover {
-  -webkit-transform: scale(1.1);
-}
-*/
-.container1:hover .descripcion {
-    display: block;
-    text-align: center;
-    padding-top: 1rem;
-  }
-.cont-circulo:hover .camioncito {
-    transform: rotateZ(360deg);
-    right: 40px;
-}
-
 
 /*  tablets    */
 @media (min-width:361px){
-  .container1{box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .container1:hover {box-shadow: 0px 0px 10px var(--grisOscuro);
   }
-  .burger-menu{
-    display: none;
-  }
+  
   .ofertas {
     font-size: 14px;
   padding-top: 3PX;
   }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  .navbar ul {
-    list-style: none;
-    display: flex;
-  }
-  .navbar li{
-    margin: 0 8px;
-  }
-  .navbar a{
-    color: #111;
-    font-size: 14px;
-  }
+  
   .container1 {
     
     width: 45%;
    
   }
-  .pie-pagina {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  
 }
-
 
 /*   notebook   */
 @media (min-width:769px){
-  
-  .navbar ul {
-    display: flex;
-  }
-  
-  .burger-menu{
-    display: none;
-  }
+ 
   .ofertas {
     font-size: 12px;
     padding-top: 5px;
@@ -290,13 +154,11 @@ color: var(--celeste);
   .container1{
     width: 21%;
   }
-  
-}
-@media (min-width: 1200px){
-  .navbar, .buscar-lupa {
-    max-width: 1200px;
-    margin: auto;
+  .container1:hover .descripcion {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
   }
 }
-
+ 
 

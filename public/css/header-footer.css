@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+}
+/* ----------------------  header ----------------------*/
+.logo {
+    width: 40%;
+  }
+  .boton {
+    width: 30%;
+    height: 20%;
+    text-align:center;
+  }
+  .botonb {
+    background-color: var(--grisClaro) ;
+    width: 50%;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .ofertas {
+    font-size: 8px;
+    margin-left: 3px;
+    color: var(--grisOscuro);
+    padding-top: 2px;
+  }
+  
+  .lupa {
+    color: var(--celeste);
+    
+    padding-right: 7px;
+    margin-left: auto;
+  }
+  header {
+    background-color: var(--amarillo);
+  }
+  .navbar {
+    display:none;
+  }
+  
+  .buscar-lupa {
+   /* height: 40px;*/
+   padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .compraCuotas {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .burger-menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .burger {
+    color: var(--grisClaro);
+    background-color: var(--celeste);
+    border-radius: 10%;
+    padding: 10px; 
+  }
+  .banner {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+
+
+
+/*--------------------------footer--------------------*/
+footer{
+    box-sizing: border-box;
+  }
+  .pie-pagina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .sector-footer{
+    text-align: center;
+    width:100%;
+    padding: 10px;
+  }
+  
+  .icono-footer{
+    color:var(--azul);
+    font-size:x-large;
+    margin: 10px;
+  }
+  .titulo-footer {
+    font-size: 16px;
+  }
+  .texto-footer {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .copyright {
+    margin: auto;
+    text-align:left;
+    padding: 25px 15px ; 
+  }
+  
+  /* para agrandar y achicar figura  20% */
+  .icono-footer:hover {
+  -webkit-transform: scale(1.2);
+  color: var(--celeste);
+  }
+  /*  tablets    */
+@media (min-width:361px){
+    .burger-menu{
+        display: none;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 10px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+      }
+      .navbar li{
+        margin: 0 4px 4px ;
+        
+      }
+      .navbar a{
+        color: #111;
+        font-size: 14px;
+      } 
+      .pie-pagina {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    /*   notebook   */
+@media (min-width:769px){
+  
+    .navbar ul {
+      display: flex;
+    }
+    .navbar li{
+        margin: 0 30px 10px ;
+        
+      }
+
+    
+    .burger-menu{
+      display: none;
+    }
+}
