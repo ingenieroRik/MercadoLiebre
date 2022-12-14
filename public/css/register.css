@@ -40,9 +40,12 @@ label, .foto {
 }
 .checkboxes {
     text-align: center;
-}
+}npm :start
 .check {
     margin-bottom: 10px;
+}
+.foto {
+    text-align: center;
 }
 .reg-reset {
     display: flex;
