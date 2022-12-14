@@ -1,27 +1,5 @@
 
-/*
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-}
 
-
-:root {
-  --amarillo: #eac926;
-  --azul: #03264c;
-  --celeste: #1259c3;
-  --grisOscuro: #666;
-  --grisClaro: #ebebeb;
-  --verde: #39b54a;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-*/
 .registro {
     background-color: #ebebeb;
     display: flex;
@@ -56,6 +34,15 @@ label, .foto {
 .comprar-vender, .fecha  {
     margin: 5px 0 30px;
 
+}
+.categoria {
+    margin-bottom: 15px;
+}
+.checkboxes {
+    text-align: center;
+}
+.check {
+    margin-bottom: 10px;
 }
 .reg-reset {
     display: flex;
