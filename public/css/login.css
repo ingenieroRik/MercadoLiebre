@@ -35,6 +35,7 @@
     background-color: #03264C;
     border-radius: 4px;
     color: #ffffff;
+    border: none;
 }
 
 .entrar:hover button{
@@ -42,5 +43,8 @@
 }
 
 input{
+    width: 100%;
     display: block;
+    outline: none;
+    border: none;
 }
